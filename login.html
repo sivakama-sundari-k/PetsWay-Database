@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="menubar.css">
+</head>
+<body>
+    <div class="loginmenu" style="background-color: lightgray;text-align: -webkit-right; ">
+        <a href="login.php" style="padding: 6px;
+            font: caption;
+            appearance: button;
+            text-decoration: none;
+            color: dimgray;
+            margin-bottom: 3px;
+            margin-right: 3px;
+            margin-top: 3px;
+            background-color: papayawhip;
+            border-radius: 7px;" class="login">Login</a>
+    </div>
+    <img src="finalHeader.jpg" alt="Pet's Way Header">
+    <div style="text-align: -webkit-center; word-spacing: 429px;background-color: darkgray;
+        margin-top: -2px;">
+        <div class="dropdown">
+            <button type="menu" class="dropbtn"> DOGS </button>
+            <div class="dropdown-content" style="text-align: left; word-spacing:4px;">
+                <a href="registration.html">Dogs for Sale</a>
+                <a href="#">Food</a>
+                <a href="#">Leashes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button type="menu" class="dropbtn"> CATS </button>
+            <div class="dropdown-content" style="text-align: left;word-spacing:4px;">
+                <a href="registration.html" style="white-space:pre-line;">Cats</a>
+                <a href="registration.html">Food</a>
+                <a href="#">Leashes</a>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        
+        <form action="login.php" method="post" id="form">
+            <label for="custUsername">Username: </label>
+            <input type="text" name="custUsername" id="custUsername" placeholder="Enter your username here" required> <br>
+            <label for="custPassword">Password: </label>
+            <input type="text" name="custPassword" id="custPassword" placeholder="Enter your password here" required> <br>
+            <button type="submit" class="register" style="margin-left: 74px; margin-top: 9px;"> Register Now </button>
+        </form>
+        
+    </div>
+</body>
+</html>

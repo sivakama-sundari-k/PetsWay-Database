@@ -1,0 +1,19 @@
+button[class="register"] {
+  display: inline-block;
+  background-color: dimgray;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: medium;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container {
+  margin: auto;
+  margin-top: 90px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: papayawhip;
+  padding: 20px;
+}
