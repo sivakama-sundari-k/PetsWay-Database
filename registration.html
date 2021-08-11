@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="menubar.css" />
+    <!-- <link rel="import" href="registration.php"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class = "loginmenu" style="background-color: darkgray;text-align: -webkit-right;     margin-bottom: 2px; ">
+    <a href="login.php" 
+    style ="padding: 6px;
+    font: caption;
+    appearance: button;
+    text-decoration: none;
+    color: dimgray;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    background-color: papayawhip;
+    border-radius: 7px;"
+    class = "login">Login</a> 
+    </div>
+    <img src="finalHeader.jpg" alt="Pet's Way Header">
+    <div style= "text-align: -webkit-center; word-spacing: 429px;background-color: darkgray;
+    margin-top: -7px;">
+    <div class="dropdown">
+        <button type="menu" class= "dropbtn"> DOGS </button>
+        <div class="dropdown-content" style ="text-align: left; word-spacing:4px;">
+            <a href="registration.html">Dogs for Sale</a>
+            <a href="#">Food</a>
+            <a href="#">Leashes</a>
+        </div>
+    </div>
+    <div class="dropdown" >
+        <button type="menu" class="dropbtn"> CATS </button>
+        <div class="dropdown-content" style ="text-align: left;word-spacing:4px;">
+            <a href="registration.html" style="white-space:pre-line;">Cats</a>
+            <a href="registration.html">Food</a>
+            <a href="#">Leashes</a>
+        </div>
+    </div>
+    </div>
+    <div class="container" style="align-items: center; text-align: center; align-content: center;">
+    <?php
+    include 'registration.php';
+    ?>
+    <h1 style="text-align: center; opacity: 50%;">Customer Registration</h1>
+    <form action="registration.php" class="Registration Form" method="post" id="form">
+        <label for="custFirstName">First Name: </label>
+        <input type="text" name="custFirstName" id="custFirstName" placeholder="Enter your first name here" pattern="[A-Za-z]+" title="Please enter a valid name" required> <br>
+        <label for="custLastName">Last Name: </label>
+        <input type="text" name="custLastName" id="custLastName" placeholder="Enter your last name here" pattern="[A-Za-z]+" title="Please enter a valid" required> <br>
+        <label for="custUsername">Username: </label>
+        <input type="text" label= "username" name="custUsername" id="custUsername" placeholder="Set your username" pattern="[a-z][a-z0-9_]*$" title="Please enter a username starting with a letter and having a combination of letters, digits or underscore (_) WITHOUT special characters. Ex: varshashree17, harshavardhan210, varsha, varsha_1 " required> <br>
+        <label for="custPassword">Password: </label>
+        <input type="password" name="custPassword" id="custPassword" placeholder="Set your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required> <br>
+        <label for="custAddress">Address: </label>
+        <input type="text" name="custAddress" id="custAddress" placeholder="Enter your address here" required> <br>
+        <label for="custEmailID">Email ID: </label>
+        <input type="email" name="custEmailID" id="custEmailID" placeholder="Enter valid email-id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email-id of the form abc@abc.in" required> <br>
+        <label for="custContactNum">Contact Number: </label>
+        <input type="text" name="custContactNum" id="custContactNum" placeholder="Enter your 10-digit phone number here" pattern="(6|7|8|9)\d{9}" title="Please enter a valid phone number" required> <br>
+        
+        <button type="submit" class = "register" style="margin-left: 74px; margin-top: 9px;"> Register Now </button>
+    </form>
+    </div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  color: white;
+  font-family: "Lora", serif;
+}
+img {
+  width: 100%;
+  position: relative;
+}
+.material-icons:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltiptext {
+  visibility: hidden;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  
+}
+/* Style inputs with type="text", select elements and textareas */
+input {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "Hind Siliguri", sans-serif;
+  color:black;
+}
+
+/* Style the submit button with a specific background color etc */
+button[type="submit"] {
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: medium;
+  border: none;
+
+  padding: 8px 10px;
+  direction: ltr;
+
+  /* cursor: pointer; */
+}
+
+/* .login:hover {
+  background-color: silver;
+  color: black;
+} */
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type="submit"]:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+
+  transition-duration: 0.4s;
+  box-shadow: 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  margin: auto;
+  margin-top: 90px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+.grid-container {
+       display: grid;
+    grid-gap: 0px 236px;
+    grid-template-columns: auto auto auto auto;
+    background-color: #1a1a1a;
+    padding: 34px;
+    opacity: 0.6;
+    margin-top: 150px;
+}
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.dropbtn {
+  background-color: #333333;
+  margin-top: 5px;
+  font: caption;
+  color: white;
+  cursor: pointer;
+  width: 116px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+}
+
+/* for menubar */
