@@ -57,41 +57,59 @@ The following SQL statement creates a table “petCategories”:
 Create table petCategories (productID int, custID int, productOrderDate date, productOrderID int, foreign key(productID)references products(productID), foreign key(custID) references customernew(custID));
 
 ALGORITHM OF IMPLEMENTATION
-4.2.1 ALGORITHM OF ADMIN
+
+ALGORITHM OF ADMIN
+
 1. Start system
 2. Login as admin.
 3. Verify the login credentials
 4. If verified, redirect admin to admin homepage.
 5. If not, return an error message.
+
 VIEW PETS/ PRODUCTS IN THE INVENTORY
+
 1. Click on Dogs/ Cats/ Products/ Cat Products under “Inventory”
 2. The items/ pets in store are displayed in the form of a table.
+
 ADDING PET / PRODUCT
+
 1. Enter pet/ product details in the Add Dog/ Cat/ Dog Product/ Cat Product Form
 2. Display addition successful message if addition is successful.
+
 UPDATING PRODUCT DETAILS
+
 1. Choose the product to be modified from the list of products available.
 2. Update the details to be modified in the form.
 3. Display successfully updated message.
+
 ARCHIVE PET/ PRODUCT
+
 1. Choose the pet/ product to be archived.
 2. Display “successfully archived” message.
+
 VIEW ORDERS
+
 1. Choose the orders list to be viewed – cat/ dog/ dog product/ cat product.
 2. The list of orders is displayed.
-4.2.2 ALGORITHM OF USER
-1. Start system
-2. Login as customer.
-3. Verify the login credentials
-4. If verified, redirect customer to customer homepage.
-5. If not, return an error message.
+
+ALGORITHM OF USER
+
+5. Start system
+6. Login as customer.
+7. Verify the login credentials
+8. If verified, redirect customer to customer homepage.
+9. If not, return an error message.
+
 SHOP FOR DOGS / CATS/ PRODUCTS
+
 1. Select a dog/ cat/ product to view details. (Additionally, you could choose the filter option to filter your preferences.)
 2. View details and price.
 3. Click “Buy”
 4. Fill the transactions form and Pay amount.
 5. Order will be successfully placed.
+
 VIEW PROFILE
+
 1. Click on “View Profile” under My Account on the top right corner of the screen.
 2. User details will be displayed on the screen.
 
